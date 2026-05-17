@@ -13,8 +13,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Creative Portfolio | Modern Web Developer",
-  description: "A beautifully animated portfolio showcasing creative web development and design.",
+  title: "Valle Portfolio",
+  description: "Design Portfolio and its experience",
 };
 
 export default function RootLayout({
