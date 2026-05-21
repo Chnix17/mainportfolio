@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { VisitCounter } from "./VisitCounter";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,7 +39,7 @@ export function Navbar() {
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -48,15 +49,19 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
+          <VisitCounter />
         </nav>
 
         {/* Mobile Nav Toggle */}
-        <button
-          className="md:hidden text-foreground"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? <X /> : <Menu />}
-        </button>
+        <div className="md:hidden flex items-center gap-4">
+          <VisitCounter />
+          <button
+            className="text-foreground"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X /> : <Menu />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Nav Menu */}

@@ -12,7 +12,7 @@ const projects = [
     link: "https://coc-studentinfo.net/gsd/grms/",
   },
   {
-    title: "Janitorial Management System",
+    title: "PHINMA Cagayan De Oro College General Services Department Janitorial Management System",
     description: "A comprehensive platform for managing janitorial tasks, schedules, and operations.",
     tags: ["React", "PHP", "MySQL"],
     image: "/images/janitorial.png",
