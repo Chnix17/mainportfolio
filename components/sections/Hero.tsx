@@ -25,7 +25,7 @@ export function Hero() {
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight">
               A Creative <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-300">
-                Web Developer
+                Web Developer & VA
               </span>
             </h1>
           </motion.div>
@@ -36,8 +36,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-lg text-muted-foreground max-w-lg"
           >
-            I build stunning, high-performance websites with a focus on modern design,
-            smooth animations, and exceptional user experiences.
+            I build stunning, high-performance websites and provide comprehensive virtual assistant services to help streamline your business operations. From web development to administrative support, I deliver exceptional results.
           </motion.p>
 
           <motion.div
@@ -47,10 +46,10 @@ export function Hero() {
             className="flex flex-wrap gap-4"
           >
             <a
-              href="#projects"
+              href="#services"
               className="px-8 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors flex items-center gap-2"
             >
-              View My Work <ArrowRight size={18} />
+              View My Services <ArrowRight size={18} />
             </a>
             <a
               href="#contact"
